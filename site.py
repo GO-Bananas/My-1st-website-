@@ -20,7 +20,7 @@ with cols[1]:
     st.write("this")
 
 class Project:
-    def __init__(name, image, link):
+    def __init__(self, name, image, link):
         self.name = name 
         self.image = image 
         self.link = link
@@ -28,7 +28,7 @@ class Project:
 
 
 projects = [
-    Project("Mario Jump","hello/Pictures/Mario jump.png", "https://trinket.io/python/9a9e2db567ec")
+    Project("Mario Jump","./Pictures/Mario jump.png", "https://trinket.io/python/9a9e2db567ec")
 ]
 
 
