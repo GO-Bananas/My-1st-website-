@@ -28,6 +28,7 @@ class Project:
 
 
 projects = [
+    Project("PONGY", "./Pictures/PONGY.png" ,"https://trinket.io/python/8aa6f3197031" ),
     Project("Mario Jump","./Pictures/Mario jump.png", "https://trinket.io/python/9a9e2db567ec")
 ]
 
@@ -36,10 +37,19 @@ projects = [
 
 
 # [0, 1, 2]
-for column in cols:
+for i in range(len(cols)):
+    column = cols[i]
     with column:
         st.container()
-        current_project = projects [0]
+        current_project = projects [i+0]
         st.image(current_project.image)
         st.write(current_project.name)
         
+
+# 1 - we want to store our project information somehow
+# Classes and objects
+# 2 - make our projects into a list
+# Common sense
+# 3 - Use a for loop and go over each project
+#why do I need to do this 0 my god
+# 4 - For every project, let's make a grid box
